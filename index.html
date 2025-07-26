@@ -98,10 +98,10 @@
         .title-end { font-size: var(--font-size-h2); }
     </style>
 </head>
-<body class="bg-gradient-to-br from-pink-200 to-green-200 flex items-center justify-center min-h-screen overflow-hidden p-2 sm:p-4">
+<!-- MODIFIED: Switched to grid for more robust centering -->
+<body class="bg-gradient-to-br from-pink-200 to-green-200 grid place-items-center min-h-screen overflow-hidden p-2 sm:p-4">
 
     <!-- Book Container -->
-    <!-- MODIFIED: Changed aspect ratio to be taller on mobile (3/4) and wider on larger screens (4/3) -->
     <div id="book" class="book w-full h-auto aspect-[3/4] sm:aspect-[4/3] max-w-md sm:max-w-[1000px] max-h-[calc(100vh-2rem)] relative">
 
         <!-- Back Cover and Spine for CLOSED book -->
