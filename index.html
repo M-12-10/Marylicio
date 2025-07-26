@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Woman Who Saved My Life</title>
+    <title>The Woman Who Saved My Life - An Interactive Book</title>
     
     <!-- Tailwind CSS for modern styling -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -101,8 +101,8 @@
 <body class="bg-gradient-to-br from-pink-200 to-green-200 flex items-center justify-center min-h-screen overflow-hidden p-2 sm:p-4">
 
     <!-- Book Container -->
-    <!-- MODIFIED: Sizing is now based on aspect ratio to maintain shape, constrained by viewport and max-width. -->
-    <div id="book" class="book w-full h-auto aspect-[8/6] max-w-[1000px] max-h-[calc(100vh-2rem)] relative">
+    <!-- MODIFIED: Changed aspect ratio to be taller on mobile (3/4) and wider on larger screens (4/3) -->
+    <div id="book" class="book w-full h-auto aspect-[3/4] sm:aspect-[4/3] max-w-md sm:max-w-[1000px] max-h-[calc(100vh-2rem)] relative">
 
         <!-- Back Cover and Spine for CLOSED book -->
         <div id="back-cover" class="w-1/2 h-full bg-pink-500 absolute right-0 preserve-3d rounded-r-lg shadow-2xl transition-opacity duration-500">
@@ -121,7 +121,7 @@
                 <div class="relative z-10 text-center mt-4 flex-grow">
                     <h1 class="title-main font-bold italic text-pink-700 leading-tight">The Woman Who Saved My Life</h1>
                 </div>
-                 <p class="absolute bottom-4 text-xs font-semibold animate-pulse z-10 cursor-pointer text-pink-700/80">Tap to open</p>
+                 <p class="absolute bottom-4 text-xs font-semibold animate-pulse z-10 cursor-pointer text-pink-700/80">Click to open</p>
             </div>
             <div class="back w-full h-full absolute backface-hidden bg-[#fffef5] rounded-l-lg p-3 sm:p-4 md:p-6 lg:p-8 flex flex-col justify-center page-shadow-left">
                 <div class="flex flex-col h-full">
